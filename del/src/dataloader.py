@@ -22,9 +22,3 @@ def get_dataloaders(data_dir="data", batch_size=32):
     test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
 
     return train_loader, val_loader, test_loader
-
-if __name__ == "__main__":
-    train_loader, val_loader, test_loader = get_dataloaders()
-    print(f"Train samples: {len(train_loader.dataset)}")
-    print(f"Validation samples: {len(val_loader.dataset)}")
-    print(f"Test samples: {len(test_loader.dataset)}")
