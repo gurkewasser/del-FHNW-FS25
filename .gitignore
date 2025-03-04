@@ -2,3 +2,4 @@ del/data/
 *.jpeg
 del/src/__pycache__/dataloader.cpython-310.pyc
 del/src/__pycache__/model.cpython-310.pyc
+del/logs/model.pth
