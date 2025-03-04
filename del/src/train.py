@@ -65,7 +65,7 @@ def train(model, train_loader, val_loader, config):
     print("Training history saved to training_history.csv")
 
     # Save trained model
-    torch.save(model.state_dict(), "model.pth")
+    torch.save(model.state_dict(), "logs/model.pth")
 
 if __name__ == "__main__":
     train_loader, val_loader, _ = get_dataloaders(batch_size=config["batch_size"])
