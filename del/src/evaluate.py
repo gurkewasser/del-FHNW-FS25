@@ -1,5 +1,5 @@
 import torch
-from model import get_model
+from model import get_model  # Import model architecture
 from dataloader import get_dataloaders
 
 def evaluate(model, test_loader):
@@ -22,8 +22,11 @@ def evaluate(model, test_loader):
 
 if __name__ == "__main__":
     _, _, test_loader = get_dataloaders(batch_size=64)
+
+    # Step 1: Create a new instance of the model
     model = get_model()
-    
-    # Load trained model
-    model.load_state_dict(torch.load("logs/model.pth"))
+
+    # Step 2: Load the saved model weights
+    model.load_state_dict(torch.load("logs/model.pth", map_location=torch.device("cuda" if torch.cuda.is_available() else "cpu")))
+
     evaluate(model, test_loader)
