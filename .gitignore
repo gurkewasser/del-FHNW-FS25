@@ -12,3 +12,4 @@ trainer.py
 wandb/debug-cli.arian.log
 wandb/settings
 del/notebooks/test.ipynb
+del/logs
