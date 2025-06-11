@@ -9,3 +9,5 @@ del/src/__pycache__/utils.cpython-310.pyc
 data_utils.py
 kfold_cv.py
 trainer.py
+wandb/debug-cli.arian.log
+wandb/settings
