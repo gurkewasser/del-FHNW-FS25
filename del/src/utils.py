@@ -26,3 +26,6 @@ def plot_training_curves(train_losses, val_losses, train_accs, val_accs, run_num
 
     plt.tight_layout(rect=[0, 0, 1, 0.95])
     plt.show()
+
+def get_number_of_parameters(model):
+    return sum(p.numel() for p in model.parameters() if p.requires_grad)
