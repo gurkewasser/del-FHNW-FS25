@@ -4,18 +4,20 @@ This repository documents the results of a deep learning challenge focused on CN
 
 ---
 
-##  Repository Structure
+## 📁 Repository Structure
 
+```text
 .
-├── data/                   # ImageNet10 images (train/val/test split)
+├── data/                   # Contains ImageNet10 images (train/val/test split)
 ├── models/                 # Custom CNN classes and architecture variants
-├── results/                # Saved plots and comparison charts
 ├── notebooks/
-│   └── main_experiments.ipynb   # All experiments and documentation
+│   └── main_experiments.ipynb   # Jupyter notebook with all experiments and documentation
+├── results/                # Saved plots and performance comparison charts
 ├── src/
-│   └── utils.py
-├── README.md               # Project overview and instructions
-└── requirements.txt        # Python dependencies (optional)
+│   └── utils.py            # Utility functions
+├── README.md               # Project overview and usage instructions
+└── requirements.txt        # Python dependencies
+```
 
 ---
 
