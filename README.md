@@ -1,12 +1,10 @@
-Sehr gerne! Hier ist ein kurzes und sauberes README.md, das du direkt in dein Projektverzeichnis legen kannst:
-
-# 🧠 Deep Learning Challenge – Image Classification on ImageNet10
+# Deep Learning Challenge – Image Classification on ImageNet10
 
 This repository documents the results of a deep learning challenge focused on CNN-based image classification using the **ImageNet10** dataset (10 classes, ~1300 images per class).
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
 .
 ├── data/                   # ImageNet10 images (train/val/test split)
@@ -14,13 +12,14 @@ This repository documents the results of a deep learning challenge focused on CN
 ├── results/                # Saved plots and comparison charts
 ├── notebooks/
 │   └── main_experiments.ipynb   # All experiments and documentation
-├── utils/                  # Dataloader, trainer class, and helper functions
+├── src/
+│   └── utils.py
 ├── README.md               # Project overview and instructions
 └── requirements.txt        # Python dependencies (optional)
 
 ---
 
-## 📌 What Was Done
+## What Was Done
 
 This project involved an in-depth exploration of the effects of various hyperparameters and architectural choices on CNN performance. The goal was to:
 
@@ -52,18 +51,9 @@ This project involved an in-depth exploration of the effects of various hyperpar
 
 ---
 
-## 📓 Notes
+## Notes
 
 - All training and evaluation logic is encapsulated in the `Trainer` class.
 - Models were trained for 40 epochs with consistent logging using **Weights & Biases (wandb)**.
 - The notebook is fully documented with hypotheses, observations, and reflections.
 - No code execution is required to explore the results — just open the notebook and view the visualizations and comments.
-
----
-
-## 👨‍🔬 Author
-
-This project was completed as part of a deep learning coursework assignment.  
-Experiments, model designs, and interpretations were independently carried out.
-
-Wenn du den Pfad oder bestimmte Ordner angepasst hast, sag mir kurz Bescheid, dann passe ich es entsprechend an.
